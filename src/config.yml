@@ -1,0 +1,19 @@
+potions-per-time: 3 #The number of potions you want to give to each player every midnight
+
+#Data: Potion Type, Potion Duration (In seconds), Potion Amplifier, Play a sound when the potion gets enabled
+#Potion Types: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+#Sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+active-potions:
+  - 'POISON, 60, 2, BLOCK_ANVIL_BREAK'
+  - "HARM, 5, 1, BLOCK_ANVIL_BREAK"
+  - "HUNGER, 60, 1, BLOCK_ANVIL_BREAK"
+  - "CONFUSION, 20, 1, BLOCK_ANVIL_BREAK"
+  - "SLOW, 60, 1, BLOCK_ANVIL_BREAK"
+  - "WITHER, 60, 1, BLOCK_ANVIL_BREAK"
+
+world-name: 'world'
+command-permission: "midnight.command" #Leave empty to remove the permission
+broadcast-message: "&8| &5Midnight &8| &bMidnight mode has been enabled!" #Leave empty to stop sending this
+broadcast-title: "&5&lIT'S 12 AM!" #Leave empty to stop sending this
+broadcast-subtitle: "&dMidnight" #Leave empty to stop sending this
+title-duration: 5 #Setting this value to 0 will stop sending title, subtitle
